@@ -1,6 +1,11 @@
 # Midterm Project – MIS 455
 
 A multi-page **Product Store** website built as a midterm project for MIS 455 (Web Development).
+<img width="1898" height="921" alt="image" src="https://github.com/user-attachments/assets/e5d94670-4563-4411-abdc-0286bccacdeb" />
+<img width="1892" height="957" alt="image" src="https://github.com/user-attachments/assets/620a426b-b6e4-499b-8d49-bfd0d860988a" />
+<img width="765" height="966" alt="image" src="https://github.com/user-attachments/assets/55720121-60c0-44ce-8163-c4bb48a1be5d" />
+<img width="1911" height="959" alt="image" src="https://github.com/user-attachments/assets/ebce5c87-c07c-41f6-af2f-df7bb8d45381" />
+<img width="1888" height="907" alt="image" src="https://github.com/user-attachments/assets/86e74d4e-c829-457b-873e-f921a14cebd5" />
 
 ## Student Information
 
