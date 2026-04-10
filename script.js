@@ -33,10 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const buyButtons = document.querySelectorAll('.product-item button');
   buyButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      const item = btn.closest('.product-item');
-      const name = item.querySelector('h4') ? item.querySelector('h4').textContent : 'Product';
-      const priceText = item.querySelector('p strong') ? item.closest('.product-item').querySelector('p:nth-of-type(2)') : null;
-      const price = priceText ? parseFloat(priceText.textContent.replace(/[^0-9.]/g, '')) : 0;
+      const name = btn.dataset.name || 'Product';
+      const price = parseFloat(btn.dataset.price) || 0;
       addToCart(name, price);
     });
   });
@@ -71,11 +69,10 @@ function validateContactForm() {
 
   const email = document.getElementById('email');
   const emailError = document.getElementById('email-error');
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!email.value.trim()) {
     emailError.textContent = 'Email address is required.';
     valid = false;
-  } else if (!emailPattern.test(email.value.trim())) {
+  } else if (!email.checkValidity()) {
     emailError.textContent = 'Please enter a valid email address.';
     valid = false;
   } else {
